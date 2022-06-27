@@ -48,6 +48,13 @@ module.exports = {
               
             // type: 'asset/resource' // 发送一个单独的文件并导出 URL
             // type: 'asset/inline' // 导出一个资源的 data URI
+        },
+        { // webpack5默认内部不认识这些文件, 所以当做静态资源直接输出即可
+            test: /\.(eot|svg|ttf|woff|woff2)$/,
+            type: 'asset/resource',
+            generator: {
+                filename: 'font-[name].[hash:6][ext]'
+            }
         }
         ]
     }
