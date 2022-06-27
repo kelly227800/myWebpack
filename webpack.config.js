@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
-    mode: "development",
+    mode: 'development',
     entry: "./src/index.js", // 入口
     output: { 
         path: path.resolve(__dirname, "dist"), // 出口路径 绝对路径
