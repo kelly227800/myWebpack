@@ -14,9 +14,10 @@ let img = document.createElement('img');
 img.src = imgUrl;
 document.body.appendChild(img);
 
-import './assets/fonts/iconfont.css'
-class App {
-    static a = 123
-  }
+import './assets/fonts/iconfont.css';
+// class App {
+//     static a = 123
+//   }
   
-  console.log(App.a)
+//   console.log(App.a)
+import vue from './app.vue'
